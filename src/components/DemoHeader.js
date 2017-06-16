@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import logo from './logo.svg';
+import logo from '../logo.svg';
 
 const Header = styled.div`
       background-color: ${ props => props.theme.papaya || 'black'};
@@ -21,7 +21,7 @@ const Spin = keyframes`
 `
 
 const Logo = styled.img`
-     animation: ${ Spin } infinite 1s linear;
+     animation: ${ Spin } infinite 20s linear;
      ${ props => props.backwards && 'animation-direction: reverse;'}
      height: 80px;
      color: red;

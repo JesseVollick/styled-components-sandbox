@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import DemoHeader from './DemoHeader';
+import DemoHeader from './components/DemoHeader';
+import FlexBoxSandBox from './components/FlexBoxSandBox';
 
 const Outer = styled.div `
     text-align: center;
 `
-
-
 
 const Button = styled.button `
         /* Adapt the colours based on primary prop */
@@ -37,6 +36,7 @@ class App extends Component {
   render() {
     return (
       <Outer>
+          <FlexBoxSandBox />
           <ThemeProvider theme={{
               tom: 'tomato',
               papaya: 'papayawhip',
@@ -50,6 +50,7 @@ class App extends Component {
                   <Button>Normal</Button>
                   <Button primary>Primary</Button>
               </Content>
+
 
       </Outer>
     );
